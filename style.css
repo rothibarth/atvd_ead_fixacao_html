@@ -8,9 +8,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-
    
 }
+
 .cabecalho{
     flex-direction: column;
     flex-wrap: wrap;
@@ -18,6 +18,7 @@ body {
     height: 15vh;
     background-color: #48b4fc;
     position: fixed;
+    
 }
 
 h1{
@@ -33,17 +34,39 @@ h1{
 }
 
 .barra_lateral{
-    width: 10%;
+    width: 20%;
     position: fixed;
     margin-right: 85%;
     height: 100%;
     background-color: dodgerblue;
     flex-direction: column;
+    margin-top: 15vh;
+    
 }
 
-li{
+.list_ul{
     font-family: 'Courier New';
     font-size: 10px;
     align-items: center;
     text-align: center;
+    list-style-type: none;
+    color: #000000;
+    margin-top: 15vh;
+}
+
+.remove_sublinhado{
+    text-decoration: none;
+}
+
+
+footer{
+    text-align: center;
+    background-color: #48b4fc;
+    position: fixed;
+    font-family: 'Courier New';
+    font-size: 10px;
+    width: 100%;
+    padding: 10px;
+    bottom: 0;
+
 }
