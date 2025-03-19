@@ -141,7 +141,7 @@
 
                 <label for="cnpj">CNPJ da Empresa:</label>
                 <input type="text" id="cnpj" name="cnpj" placeholder="00.000.000/0000-00"
-                pattern="[0-9]{2}\.[0-9]{3}\.[0-9]{3}/[0-9]{4}-[0-9]{2}" required>
+                    pattern="[0-9]{2}\.[0-9]{3}\.[0-9]{3}/[0-9]{4}-[0-9]{2}" required>
 
                 <label for="cargo">Cargo:</label>
                 <input type="text" name="cargo" id="cargo">
@@ -158,9 +158,44 @@
             <!-- Inicio do card de formulario Preferências e Redes Sociais -->
             <section class="card_prefer_rede_sociais">
 
-            </section>
+                <label for="genero_musical">Gênero Musical Favorito:</label>
+                <input type="text" id="genero_musical" name="genero_musical">
 
+                <label for="hobbies">Hobbies:</label>
+                <label>
+                    <input type="checkbox" name="hobbies" value="Futebol"> Futebol
+                </label>
+                <label>
+                    <input type="checkbox" name="hobbies" value="Leitura"> Leitura
+                </label>
+                <label>
+                    <input type="checkbox" name="hobbies" value="Viagens"> Viagens
+                </label>
+                <label>
+                    <input type="checkbox" name="hobbies" value="Música"> Música
+                </label>
+
+                <label for="facebook">Facebook:</label>
+                <input type="url" id="facebook" name="facebook">
+
+                <label for="instagram">Instagram:</label>
+                <input type="url" id="instagram" name="instagram">
+
+                <label for="linkedln">Linkedln:</label>
+                <input type="url" id="linkedln" name="linkedln">
+
+                <label>Notificações via E-mail:</label>
+                <label>
+                    <input type="radio" name="notificacoes_email" value="sim"> Sim
+                </label>
+                <label>
+                    <input type="radio" name="notificacoes_email" value="nao"> Não
+                </label>
+
+            </section>
             <!-- Final do card de formulario Preferências e Redes Sociais  -->
+
+            
 
 
 
