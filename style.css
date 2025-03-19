@@ -49,7 +49,7 @@ h1 {
 
 .list_ul li {
     margin: 15px 0;
-    text-align: center;
+    text-align: start;
 }
 
 .list_ul a {
