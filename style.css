@@ -82,11 +82,11 @@ section {
     flex-direction: column;
 }
 
-.card-form{
+.card-form {
     border: solid 2px;
     margin-bottom: 6%;
     box-shadow: 4px 6px gray;
-    
+
 }
 
 label {
@@ -94,12 +94,31 @@ label {
     margin-top: 10px;
 }
 
-input, select, textarea {
+input,
+select,
+textarea {
     width: 100%;
     padding: 8px;
     margin-top: 5px;
     border-radius: 5px;
     border: 1px solid #ccc;
+}
+
+.btn_submit {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    margin-bottom: 5rem;
+}
+
+.btn_reset{
+    background-color: #FFDB58; 
+    color: white; 
+    padding: 10px 20px; 
+    border: none;
+    margin-bottom: 5rem;
+
 }
 
 footer {
@@ -124,7 +143,7 @@ footer {
     }
 
     .list_ul {
-        display: flex;
+        /* display: flex; */
         flex-direction: row;
         justify-content: center;
         gap: 15px;
@@ -137,6 +156,3 @@ footer {
         padding: 10px;
     }
 }
-
-
-
