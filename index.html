@@ -16,11 +16,11 @@
 
     <aside class="barra_lateral">
         <ul class="list_ul">
-            <li><a href="#" class="remove_sublinhado">&#x1F3E0 Início</a></li>
-            <li><a href="#" class="remove_sublinhado">&#x1F4C4 Formulários</a></li>
-            <li><a href="#" class="remove_sublinhado">&#x2699 Configurações</a></li>
-            <li><a href="#" class="remove_sublinhado">&#x1F4BC Trabalhe Conosco</a></li>
-            <li><a href="#" class="remove_sublinhado">&#x1F4DE Fale Conosco</a></li>
+            <li><a href="#" >&#x1F3E0 Início</a></li>
+            <li><a href="#" >&#x1F4C4 Formulários</a></li>
+            <li><a href="#" >&#x2699 Configurações</a></li>
+            <li><a href="#" >&#x1F4BC Trabalhe Conosco</a></li>
+            <li><a href="#" >&#x1F4DE Fale Conosco</a></li>
 
             <img src="./imgs/Gemini_Generated_Image_l9f5y9l9f5y9l9f5-removebg-preview.png" width="100vh" alt="logo">
 
@@ -30,7 +30,7 @@
 
     <!-- formularios -->
 
-    <section class="formularios" style="width: 50px;">
+    <section class="formularios">
         <form action="" method="post">
 
             <!-- formularios informações pessoais -->
@@ -195,10 +195,83 @@
             </section>
             <!-- Final do card de formulario Preferências e Redes Sociais  -->
 
-            
+            <!-- Inicio do card de formulario pagamentos e dados bancarios -->
 
+            <section class="card_pag_dados_bancários">
 
+                <label for="numero_cartao">Número do Cartão de Crédito:</label>
+                <input type="text" id="numero_cartao" name="numero_cartao" placeholder="XXXX XXXX XXXX XXXX"
+                    maxlength="19" pattern="\d{4} \d{4} \d{4} \d{4}" required>
 
+                <label for="vencimento_cartao">Data de Vencimento do Cartão:</label>
+                <select id="vencimento_cartao" name="vencimento_cartao" required>
+                    <option value="">Selecione o mês</option>
+                    <option value="01">Janeiro</option>
+                    <option value="02">Fevereiro</option>
+                    <option value="03">Março</option>
+                    <option value="04">Abril</option>
+                    <option value="05">Maio</option>
+                    <option value="06">Junho</option>
+                    <option value="07">Julho</option>
+                    <option value="08">Agosto</option>
+                    <option value="09">Setembro</option>
+                    <option value="10">Outubro</option>
+                    <option value="11">Novembro</option>
+                    <option value="12">Dezembro</option>
+                </select>
+
+                <label for="cvv">Código de Segurança (CVV):</label>
+                <input type="number" id="cvv" name="cvv" placeholder="XXX" maxlength="3" required>
+
+                <label for="banco">Banco:</label>
+                <select id="banco" name="banco" required>
+                    <option value="">Selecione o banco</option>
+                    <option value="bb">Banco do Brasil</option>
+                    <option value="caixa">Caixa</option>
+                    <option value="bradesco">Bradesco</option>
+                </select>
+
+                <label for="agencia">Agência:</label>
+                <input type="text" id="agencia" name="agencia" required>
+
+                <label for="conta_corrente">Conta Corrente:</label>
+                <input type="text" id="conta_corrente" name="conta_corrente" required>
+
+                <label for="tipo_conta">Tipo de Conta:</label>
+                <select id="tipo_conta" name="tipo_conta" required>
+                    <option value="">Selecione o tipo de conta</option>
+                    <option value="poupanca">Poupança</option>
+                    <option value="corrente">Corrente</option>
+                </select>
+
+            </section>
+            <!-- Final do card de formulario pagamentos e dados bancarios -->
+
+            <!-- Inicio do card de formulario outros recursos -->
+
+            <section class="card_outros_recursos">
+
+                <label for="upload_documento">Upload de Documento PDF:</label>
+                <input type="file" id="upload_documento" name="upload_documento" accept="application/pdf" required>
+
+                <label for="aceitar_termos">Aceitar Termos:</label>
+                <input type="range" id="aceitar_termos" name="aceitar_termos" min="0" max="1" step="1" required>
+
+                <label for="horario_preferencia">Horário de Preferência para Contato:</label>
+                <input type="time" id="horario_preferencia" name="horario_preferencia" required>
+
+                <label for="numero_dependentes">Número de Dependentes:</label>
+                <input type="number" id="numero_dependentes" name="numero_dependentes" min="0" required>
+
+                <label for="cor_favorita">Cor Favorita:</label>
+                <input type="color" id="cor_favorita" name="cor_favorita">
+
+                <label for="comentarios">Comentários ou Observações:</label>
+                <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+
+            </section>
+
+            <!-- Final do card de formulario outros recursos -->
 
 
 
